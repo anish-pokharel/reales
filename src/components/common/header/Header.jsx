@@ -16,7 +16,7 @@ const Header = () => {
               {nav.map((val) => {
                 return (
                   <>
-                    <li>
+                    <li className="link">
                       <a href={list.path}>{val.text}</a>
                     </li>
                   </>
