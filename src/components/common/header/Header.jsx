@@ -39,9 +39,8 @@ const Header = () => {
               {navList ? (
                 <i className="fa fa-times"></i>
               ) : (
-                <i className="fa-fa-bars"></i>
+                <i className="fa fa-bars"></i>
               )}
-              >
             </button>
           </div>
         </div>

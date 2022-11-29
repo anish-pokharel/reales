@@ -43,3 +43,40 @@ header h4 {
 header .toogle {
     display: none;
 }
+
+@media screen and (max-width:768px) {
+    header {
+        padding: 0;
+    }
+
+    header img {
+        margin-top: 30px;
+    }
+
+    header .buton {
+        display: none;
+    }
+
+    header .nav .flex {
+        display: none;
+    }
+
+    header .toogle {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header .small {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: #27ae60;
+        padding: 20px;
+    }
+
+    header li a {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
