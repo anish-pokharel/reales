@@ -1,9 +1,11 @@
-import React from "react";
-import { list, nav } from "../../data/Data";
+import React, { useState } from "react";
+
+import { nav } from "../../data/Data";
 // import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
+  const [navList, setNavList] = useState(false);
   return (
     <>
       <header>
@@ -12,12 +14,12 @@ const Header = () => {
             <img src="./images/logo.png" alt="" />
           </div>
           <div className="nav">
-            <ul className="small">
+            <ul className={navList ? "small" : "flex"}>
               {nav.map((val) => {
                 return (
                   <>
                     <li className="link">
-                      <a href={list.path}>{val.text}</a>
+                      <a href={val.path}>{val.text}</a>
                     </li>
                   </>
                 );
@@ -33,7 +35,14 @@ const Header = () => {
             </button>
           </div>
           <div className="toogle">
-            <button>toogle</button>
+            <button onClick={() => setNavList(!navList)}>
+              {navList ? (
+                <i className="fa fa-times"></i>
+              ) : (
+                <i className="fa-fa-bars"></i>
+              )}
+              >
+            </button>
           </div>
         </div>
       </header>
