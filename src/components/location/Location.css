@@ -1,0 +1,21 @@
+.location .box {
+    position: relative;
+    border-radius: 5px;
+}
+
+.location img {
+    border-radius: 5px;
+}
+
+.location .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    color: #fff;
+    z-index: 222;
+}

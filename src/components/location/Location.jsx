@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../common/Heading";
 import { location } from "../data/Data";
+import "./Location.css";
 
 const Location = () => {
   return (
