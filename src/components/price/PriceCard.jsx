@@ -1,5 +1,6 @@
 import React from "react";
 import { price } from "../data/Data";
+import "./Price.css";
 
 const PriceCard = () => {
   return (
@@ -45,7 +46,7 @@ const PriceCard = () => {
                   className="btn5"
                   style={{
                     background: val.plan === "Standard" ? "#27ae60" : "#fff",
-                    color: val.plan === "standard " ? "#fff" : "#27ae60",
+                    color: val.plan === "Standard" ? "#fff" : "#27ae60",
                   }}
                 >
                   Start{val.plan}
