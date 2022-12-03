@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../../components/common/Heading";
 import { team } from "../data/Data";
+import "./Team.css";
 
 const Team = () => {
   return (
