@@ -40,6 +40,16 @@ const PriceCard = () => {
                     );
                   })}
                 </ul>
+
+                <button
+                  className="btn5"
+                  style={{
+                    background: val.plan === "Standard" ? "#27ae60" : "#fff",
+                    color: val.plan === "standard " ? "#fff" : "#27ae60",
+                  }}
+                >
+                  Start{val.plan}
+                </button>
               </div>
             </>
           );
