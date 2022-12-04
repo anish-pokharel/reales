@@ -1,6 +1,7 @@
 import React from "react";
 // import image from "../../../public/images/logo-light.png";
 import { footer } from "../data/Data";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -41,7 +42,7 @@ const Footer = () => {
                     {val.text.map((value) => {
                       return (
                         <>
-                          <li>{value.list}</li>;
+                          <li>{value.list}</li>
                         </>
                       );
                     })}
