@@ -1,5 +1,6 @@
 import React from "react";
 // import image from "../../../public/images/logo-light.png";
+import { footer } from "../data/Data";
 
 const Footer = () => {
   return (
@@ -20,10 +21,40 @@ const Footer = () => {
           <div className="box">
             <div className="logo">
               <img src="../../../public/images/logo-light.png" alt="" />
+              <h2>Do You Need Help With Anything?</h2>
+              <p>
+                Receive updates, hot deals, tutorials, discounts sent straignt
+                in your inbox every month
+              </p>
+              <div className="input flex">
+                <input type="text" placeholder="Email Address" />
+                <button>Subscribe</button>
+              </div>
             </div>
           </div>
+          {footer.map((val) => {
+            return (
+              <>
+                <div className="box">
+                  <h3>{val.title}</h3>
+                  <ul>
+                    {val.text.map((value) => {
+                      return (
+                        <>
+                          <li>{value.list}</li>;
+                        </>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </>
+            );
+          })}
         </div>
       </footer>
+      <div className="legal">
+        <span>© 2021 RentUP. </span>
+      </div>
     </>
   );
 };
