@@ -3,6 +3,7 @@ import Header from "./common/header/Header";
 import Footer from "./footer/Footer";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./home/Home";
+import About from "./about/About";
 
 const Page = () => {
   return (
@@ -17,7 +18,7 @@ const Page = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Home />} />
